@@ -9,17 +9,17 @@ public class Letter {
         return letter;
     }
 
-    static String vowels = "уеїіаоєяю";
-    static String[] vowelsArr = vowels.split("");
+    static String vowels = "уеїіаоєяю"; // Голосні літери.
+    static String[] vowelsArr = vowels.split(""); // Масив голосних літер.
 
-    static String consonants = "йцкнгшщзхфвпрлджґчсмтб";
-    static String[] consonantsArr = consonants.split("");
+    static String consonants = "йцкнгшщзхфвпрлджґчсмтб"; // Приголосні літери.
+    static String[] consonantsArr = consonants.split(""); // Масив приголосних літер.
 
-    public static String[] getVowelsArr(){
+    public static String[] getVowelsArr(){ // Геттер масиву голосних літер.
         return vowelsArr;
     }
 
-    public static String[] getConsonantsArr(){
+    public static String[] getConsonantsArr(){ // Геттер приголосних літер.
         return consonantsArr;
     }
 }
